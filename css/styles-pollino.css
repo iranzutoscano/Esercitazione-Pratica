@@ -221,11 +221,11 @@ nav {
 }
 
 /* attività */
-.attività {
+.attivita {
     display: flex;
 }
 
-.attività-testo {
+.attivita-testo {
     background-color: #7C8679;
     width: 50%; 
     padding-left: 154px;
@@ -236,26 +236,26 @@ nav {
     color: white;
 }
 
-.attività-testo h1 {
+.attivita-testo h1 {
     font-family: 'Bodoni Moda', serif;
     font-weight: 400;
     font-size: 38px;
     padding-bottom: 10px;
 }
 
-.attività-testo p {
+.attivita-testo p {
     font-family: 'Poppins-Regular', sans-serif;
     font-size: 16px;
     line-height: 130%;
 }
 
-.image-attività {
+.image-attivita {
     width: 50%; 
     display: flex;
     justify-content: flex-end; 
 }
 
-.image-attività img {
+.image-attivita img {
     width: 100%; 
     height: auto;
     object-fit: cover;
