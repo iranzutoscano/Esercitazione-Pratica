@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'Vogue';
+    src: url('fonts/Vogue.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    background: #F3F2E3;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header {
+    padding: 20px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que el navbar esté por encima de la imagen */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+/* NAVBAR */
+nav {
+    font-family: 'Vogue', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.logo {
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+/* IMG OVERLAY */
+/* Contenedor de la imagen */
+.image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay del 40% */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    z-index: 1; /* Asegura que el overlay esté sobre la imagen */
+}
+
+/* TESTO */
+.text-content {
+    max-width: 800px;
+    margin-left: 151px;
+    color: #fff;
+}
+
+.text-content h1 {
+    color: white;
+    font-family: 'Vogue', sans-serif;
+    font-size: 100px;
+    line-height: 112%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.text-content p {
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-size: 21px;
+    line-height: 130%;
+    width: 565px;
+}
+
+/* PARADISO INFO */
+.image-divider img {
+    width: 100%;
+    display: block;
+    height: 166px;
+    object-fit: cover;
+}
+/* contenuto */
+.pollino-contenuto {
+    background: #2a3b30;
+    color: white;
+    padding: 58px 20px; 
+    font-family: 'Poppins-Regular', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.pollino-intro {
+    font-size: 16px;
+    max-width: 744px;
+    line-height: 130%;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Montagne */
+.montagne {
+    display: flex;
+}
+
+.montagne-testo {
+    background-color: #7C8679;
+    width: 50%; 
+    padding-left: 154px;
+    padding-right: 77px;
+    padding-top: 60px;
+    width: 720px;
+    height: 495px;
+    color: white;
+}
+
+.montagne-testo h1 {
+    font-family: 'Vogue';
+    font-size: 48px;
+    padding-bottom: 10px;
+    width: 494px;
+}
+
+.montagne-testo p {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.image-montagne {
+    width: 50%; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.image-montagne img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+/* fauna emblematica*/
+.fauna-contenuto {
+    background: #2a3b30;
+    color: white;
+    padding: 58px 20px; 
+    font-family: 'Poppins-Regular', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.fauna-testo {
+    font-size: 21px;
+    max-width: 744px;
+    line-height: 130%;
+    text-align: left;
+}
+
+.fauna-testo h1 {
+    font-family: 'Vogue', sans-serif;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+.fauna-testo p {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 16px;
+}
+
+/* attività */
+.attività {
+    display: flex;
+}
+
+.attività-testo {
+    background-color: #7C8679;
+    width: 50%; 
+    padding-left: 154px;
+    padding-right: 77px;
+    padding-top: 60px;
+    width: 720px;
+    height: 670px;
+    color: white;
+}
+
+.attività-testo h1 {
+    font-family: 'Vogue';
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+
+.attività-testo p {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.image-attività {
+    width: 50%; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.image-attività img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+/* patrimonio */
+.patrimonio-contenuto {
+    background: #2a3b30;
+    color: white;
+    padding: 58px 20px; 
+    font-family: 'Poppins-Regular', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.patrimonio-testo {
+    font-size: 21px;
+    max-width: 744px;
+    line-height: 130%;
+    text-align: left;
+}
+
+.patrimonio-testo h1 {
+    font-family: 'Vogue', sans-serif;
+    font-size: 48px;
+    line-height: 112%;
+}
+
+.patrimonio-testo p {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 16px;
+}
+
+/* storico */
+.storico {
+    display: flex;
+}
+
+.storico-testo {
+    background-color: #7C8679;
+    width: 50%; 
+    padding-left: 154px;
+    padding-right: 77px;
+    padding-top: 60px;
+    width: 720px;
+    height: 470px;
+    color: white;
+}
+
+.storico-testo h1 {
+    font-family: 'Vogue';
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+
+.storico-testo p {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.image-storico {
+    width: 50%; 
+    display: flex;
+    justify-content: flex-end; 
+    object-fit: cover;
+}
+
+.image-storico img {
+    width: 100%; 
+    height: 470px;
+}
+
+/* conservazione */
+.conservazione-contenuto {
+    background: #2a3b30;
+    color: white;
+    padding: 58px 20px; 
+    font-family: 'Poppins-Regular', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.conservazione-testo {
+    font-size: 21px;
+    max-width: 744px;
+    line-height: 130%;
+    text-align: left;
+}
+
+.conservazione-testo h1 {
+    font-family: 'Vogue';
+    font-size: 48px;
+    line-height: 112%;
+}
+
+.conservazione-testo p {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 16px;
+}
+
+/* visita */
+.visita {
+    display: flex;
+}
+
+.visita-testo {
+    background-color: #6E8B9F;
+    width: 50%; 
+    padding-left: 154px;
+    padding-right: 77px;
+    padding-top: 60px;
+    width: 720px;
+    height: 550px;
+    color: white;
+}
+
+.visita-testo h1 {
+    font-family: 'Vogue';
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+
+.visita-testo p {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.image-visita {
+    width: 50%; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.image-visita img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+/*footer */
+footer {
+    font-family: 'Poppins-Regular';
+    font-size: 12px;
+    background-color: #353D35;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    gap: 29px; 
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}

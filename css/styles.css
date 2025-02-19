@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Vogue';
+    src: url('fonts/Vogue.ttf') format(truetype);
+    font-family: 'Poppins-regular';
+    src: url('fonts/Poppins-Regular.ttf') format(truetype);
+    font-family: 'Poppins-Medium';
+    src: url('fonts/Poppins-Medium.ttf') format(truetype);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    background: #F3F2E3;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header {
+    padding: 20px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que el navbar esté por encima de la imagen */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+/* NAVBAR */
+nav {
+    font-family: 'Vogue';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.logo a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+/* IMG OVERLAY */
+/* Contenedor de la imagen */
+.image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay del 40% */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    z-index: 1; /* Asegura que el overlay esté sobre la imagen */
+}
+
+/* TESTO */
+.text-content {
+    max-width: 800px;
+    margin-left: 151px;
+    color: #fff;
+}
+
+.text-content h1 {
+    color: white;
+    font-family: 'Vogue', sans-serif;
+    font-size: 100px;
+    line-height: 112%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.text-content p {
+    font-family: 'Poppins-Regular';
+    font-size: 21px;
+    line-height: 130%;
+    width: 565px;
+}
+
+/* CARDS */
+.section-title {
+    margin-top: 40px; 
+    margin-left: 140px;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Vogue', sans-serif;
+    font-size: 40px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 25px; /* Espacio entre tarjetas */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 2; /* Asegura que las tarjetas estén por encima de la imagen de fondo */
+}
+
+.card {
+    width: 264px;
+    height: 329px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.testo-card {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Vogue', sans-serif;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.cards-container a {
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.card:hover .testo-card {
+    opacity: 1; /* Texto visible al hacer hover */
+}
+
+/* Contenedor de las imágenes y botones */
+.images-buttons-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes y botones */
+    gap: 102px;
+    margin-top: 40px; /* Espacio entre las cards y las imágenes */
+    padding: 20px;
+}
+
+/* Estilos para cada imagen y botón */
+.images-buttons-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 102px; 
+    margin-top: 40px; /* Espacio entre las cards y las imágenes */
+}
+
+.image-button {
+    text-align: left; 
+}
+
+.image-button img {
+    width: 513px; 
+    height: 309px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilos para los botones */
+.custom-button {
+    display: block;
+    margin-top: 19px;
+    font-family: 'Poppins-Regular';
+    padding: 5px;
+    width: fit-content;
+    background-color: #F3F2E3 ; 
+    color: black; 
+    text-decoration: none; 
+    font-size: 16px;
+    border-radius: 20px; 
+    transition: background-color 0.3s ease; 
+    border: 0.5px solid black;
+}
+
+.custom-button:hover {
+    background-color: black;
+    color: #F3F2E3;
+}
+
+/*footer */
+footer {
+    font-family: 'Poppins-Regular';
+    font-size: 12px;
+    background-color: #353D35;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    gap: 29px; 
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
