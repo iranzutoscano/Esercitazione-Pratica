@@ -54,8 +54,10 @@ nav {
     font-size: 20px;
 }
 
-.logo {
+.logo a {
     color: white;
+    list-style: none;
+    text-decoration: none;
 }
 
 .nav-links {
