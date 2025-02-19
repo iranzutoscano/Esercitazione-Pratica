@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-body,html {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400; /* Regular */
-    
+body,html { 
     background: #F3F2E3;
     height: 100%;
     margin: 0;
@@ -32,7 +29,9 @@ header {
 }
 /* NAVBAR */
 nav {
-    font-family: 'Vogue';
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400; /* Regular */
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,15 +105,16 @@ nav {
 
 .text-content h1 {
     color: white;
-    font-family: 'Vogue', sans-serif;
-    font-size: 100px;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400; 
+    font-size: 90px;
     line-height: 112%;
     margin-bottom: 20px;
     width: 100%;
 }
 
 .text-content p {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins', sans-serif;, sans-serif;
     font-size: 21px;
     line-height: 130%;
     width: 565px;
@@ -126,7 +126,8 @@ nav {
     margin-left: 140px;
     padding: 10px;
     text-align: left;
-    font-family: 'Vogue', sans-serif;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400; 
     font-size: 40px;
 }
 
@@ -163,7 +164,8 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: left;
-    font-family: 'Vogue', sans-serif;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400; 
     padding: 10px;
     opacity: 0;
     transition: opacity 0.3s ease; /* Transición suave para el efecto hover */
@@ -212,7 +214,7 @@ nav {
 .custom-button {
     display: block;
     margin-top: 19px;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     padding: 5px;
     width: fit-content;
     background-color: #F3F2E3 ; 
@@ -231,7 +233,7 @@ nav {
 
 /*footer */
 footer {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 12px;
     background-color: #353D35;
     color: white;

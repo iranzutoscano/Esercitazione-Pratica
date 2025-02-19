@@ -44,7 +44,8 @@ header {
 }
 /* NAVBAR */
 nav {
-    font-family: 'Vogue', sans-serif;
+        font-family: 'Bodoni Moda', serif;
+    font-weight: 400; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,8 +119,9 @@ nav {
 
 .text-content h1 {
     color: white;
-    font-family: 'Vogue', sans-serif;
-    font-size: 100px;
+        font-family: 'Bodoni Moda', serif;
+    font-weight: 400; 
+    font-size: 90px;
     line-height: 112%;
     margin-bottom: 20px;
     width: 100%;
@@ -221,7 +223,8 @@ nav {
 }
 
 .fauna-testo h1 {
-    font-family: 'Vogue', sans-serif;
+        font-family: 'Bodoni Moda', serif;
+    font-weight: 400; 
     font-size: 48px;
     padding-bottom: 20px;
 }
@@ -290,7 +293,8 @@ nav {
 }
 
 .patrimonio-testo h1 {
-    font-family: 'Vogue', sans-serif;
+        font-family: 'Bodoni Moda', serif;
+    font-weight: 400; 
     font-size: 48px;
     line-height: 112%;
 }
