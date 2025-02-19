@@ -1,18 +1,3 @@
-@font-face {
-    font-family: 'Vogue';
-    src: url('fonts/Vogue.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Poppins-Regular';
-    src: url('fonts/Poppins-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Poppins-Medium';
-    src: url('fonts/Poppins-Medium.ttf') format('truetype');
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +29,7 @@ header {
 }
 /* NAVBAR */
 nav {
-        font-family: 'Bodoni Moda', serif;
+font-family: 'Bodoni Moda', serif;
     font-weight: 400; 
     display: flex;
     justify-content: space-between;
@@ -119,7 +104,7 @@ nav {
 
 .text-content h1 {
     color: white;
-        font-family: 'Bodoni Moda', serif;
+    font-family: 'Bodoni Moda', serif;
     font-weight: 400; 
     font-size: 90px;
     line-height: 112%;
@@ -128,7 +113,7 @@ nav {
 }
 
 .text-content p {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 21px;
     line-height: 130%;
     width: 565px;
@@ -178,13 +163,14 @@ nav {
 }
 
 .paesaggi-testo h1 {
-    font-family: 'Vogue';
-    font-size: 48px;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400;
+    font-size: 38px;
     padding-bottom: 10px;
 }
 
 .paesaggi-testo p {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 16px;
     line-height: 130%;
 }
@@ -220,7 +206,7 @@ nav {
 }
 
 .fauna-testo h1 {
-        font-family: 'Bodoni Moda', serif;
+    font-family: 'Bodoni Moda', serif;
     font-weight: 400; 
     font-size: 48px;
     padding-bottom: 20px;
@@ -248,13 +234,14 @@ nav {
 }
 
 .attività-testo h1 {
-    font-family: 'Vogue';
-    font-size: 48px;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400;
+    font-size: 38px;
     padding-bottom: 10px;
 }
 
 .attività-testo p {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 16px;
     line-height: 130%;
 }
@@ -291,7 +278,7 @@ nav {
 }
 
 .patrimonio-testo h1 {
-        font-family: 'Bodoni Moda', serif;
+    font-family: 'Bodoni Moda', serif;
     font-weight: 400; 
     font-size: 48px;
     line-height: 112%;
@@ -319,13 +306,14 @@ nav {
 }
 
 .conservazione-testo h1 {
-    font-family: 'Vogue';
-    font-size: 48px;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400;
+    font-size: 38px;
     padding-bottom: 10px;
 }
 
 .conservazione-testo p {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 16px;
     line-height: 130%;
 }
@@ -361,7 +349,7 @@ nav {
 }
 
 .visita-testo h1 {
-        font-family: 'Bodoni Moda', serif;
+    font-family: 'Bodoni Moda', serif;
     font-weight: 400; 
     font-size: 48px;
     line-height: 112%;
@@ -374,7 +362,7 @@ nav {
 
 /*footer */
 footer {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 12px;
     background-color: #353D35;
     color: white;
